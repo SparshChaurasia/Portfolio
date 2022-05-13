@@ -2,5 +2,4 @@ from django.shortcuts import render, HttpResponse
 
 
 def index(request):
-    return HttpResponse("Homepage")
-    
+    return render(request, "index.html")
