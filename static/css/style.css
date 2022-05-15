@@ -155,11 +155,11 @@ img {
 }
 
 /*==================== NAV ====================*/
-.navbar {
+.navbar__list {
     display: flex;
 }
 
-.navbar-item {
+.navbar__item {
     padding-left: 4rem;
 }
 
