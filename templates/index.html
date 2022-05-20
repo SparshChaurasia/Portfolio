@@ -7,6 +7,7 @@
     <title>MyPortfolio</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="header">
@@ -24,9 +25,32 @@
     </header>
     <main class="main">
         <section class="section hero" id="hero">
-            <h1 class="section__title">Hero</h1>
-            <h1 class="section__subtitle">this is subtitle</h1>
-            <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aperiam veniam, error cum dolorum ducimus aliquid sunt assumenda eum possimus, voluptatum, velit ullam magni accusantium. Cum minima eum quod suscipit hic assumenda quidem repellat asperiores ad perspiciatis corrupti molestiae illo, doloremque natus sit, consequatur debitis unde iusto culpa nisi! Consequatur?</p>
+            <div class="section__links-wrapper">
+                <div class="section__link">
+                    <a href="https://www.instagram.com/sparshchaurasia0021/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-3x fa-instagram"></i></a>
+                </div>
+                <div class="section__link">
+                    <a href="https://discord.gg/Fh5CctFSXP" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-3x fa-discord"></i></a>
+                </div>
+                <div class="section__link">
+                    <a href="mailto:sparshchaurasia0021@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-3x fa-envelope"></i></a>
+                </div>
+                <div class="section__link">
+                    <a href="http://github.com/SparshChaurasia/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-3x fa-github"></i></a>
+                </div>
+            </div>
+            <div class="section__content-wrapper">
+                <div class="section__content">
+                    <h1 class="section__title">Hi, I'am Sparsh</h1>
+                    <h3 class="section__subtitle">Web developer</h3>
+                    <p class="section__text">High level experience in web design and developement. Believe in quality work.</p>
+                </div>
+                <br><br>
+                <a href="#contact" class="btn btn-contact-me">Contact Me</i></a>
+            </div>
+            <picture class="hero__image--wrapper">
+                <img src="{% static 'images/doge.png' %}" alt="placeholder image" class="hero-image">
+            </picture>
         </section>
         <section class="section about" id="about">
             <h1 class="section__title">About</h1>
