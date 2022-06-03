@@ -4,16 +4,16 @@
 /*==================== VARIABLES CSS ====================*/
 :root {
     --header-height: 7rem;
-    --footer-height: 2rem;
+    /* --footer-height: 2rem; */
 
     /*========== Colors ==========*/
-    --hue-color: 250;
+    /* --hue-color: 250; */
 
     --first-color: #5680E9;
     --title-color: #8860D0;
-    --text-color: #5AB9EA;
-    --text-color-light: #C1C8E4;
-    --body-color: #84CEEB;
+    --text-color: #C1C8E4;
+    --body-color: #5AB9EA;
+    --body-color-light: #84CEEB;
 
     /*========== Font and typography ==========*/
     --body-font: 'Poppins', sans-serif;
@@ -94,14 +94,6 @@ img {
     border: 5px solid black;
 }
 
-.section__link-wrapper {
-    padding: 5rem;
-}
-
-.section__link {
-    margin: 2rem 0;
-}
-
 .section__title {
     font-size: var(--big-font-size);
     color: var(--title-color);
@@ -128,10 +120,6 @@ img {
     border-radius: .25rem;
 }
 
-.btn-contact-me {
-    margin-top: 2rem;
-}
-
 .btn:hover {
     color: white;
     background-color: var(--first-color);
@@ -148,16 +136,16 @@ img {
     z-index: var(--z-fixed);
 
     padding: 0 var(--page-indent);
-    
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     background-color: var(--body-color);
 }
 
 .main {
-    margin-top:  var(--header-height);
+    margin-top: var(--header-height);
     /* height: calc(100vh - var(--header-height) - var(--footer-height)); */
     height: calc(100vh - var(--header-height));
 
@@ -193,7 +181,7 @@ img {
 .navbar__item a {
     color: var(--title-color);
     font-weight: var(--font-medium);
-} 
+}
 
 .logo {
     height: 5rem;
@@ -215,6 +203,8 @@ img {
 } */
 
 /*==================== SECTION ====================*/
+
+/*=============== Hero Section ===============*/
 .hero {
     background-color: aquamarine;
     display: flex;
@@ -226,14 +216,35 @@ img {
     height: 17rem;
 }
 
+.hero__link-wrapper {
+    padding: 5rem;
+}
+
+.hero__link {
+    margin: 2rem 0;
+}
+
+.hero__link--instagram,
+.hero__link--gmail,
+.hero__link--github {
+    padding-left: 6px;
+}
+
+.btn-contact-me {
+    margin-top: 2rem;
+}
+
+/*=============== About Section ===============*/
 .about {
     background-color: crimson;
 }
 
+/*=============== Projects Section ===============*/
 .projects {
     background-color: antiquewhite;
 }
 
+/*=============== Contact Section ===============*/
 .contact {
     background-color: yellowgreen;
 }
