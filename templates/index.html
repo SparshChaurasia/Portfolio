@@ -39,10 +39,10 @@
                     <a href="http://github.com/SparshChaurasia/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-2x fa-github"></i></a>
                 </div>
             </div>
-            <div class="section__content-wrapper">
-                <div class="section__content">
-                    <h1 class="section__title">Hi, I'am Sparsh</h1>
-                    <h3 class="section__subtitle">Web developer</h3>
+            <div class="hero__content-wrapper">
+                <div class="hero__content">
+                    <h1 class="section__title hero__title">Hi, I'am Sparsh</h1>
+                    <h3 class="section__subtitle hero__subtitle">Web developer</h3>
                     <p class="section__text">High level experience in web design and developement. Believe in quality work.</p>
                 </div>
                 <br><br>
@@ -53,9 +53,21 @@
             </picture>
         </section>
         <section class="section about" id="about">
-            <h1 class="section__title">About</h1>
-            <h1 class="section__subtitle">this is subtitle</h1>
-            <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aperiam veniam, error cum dolorum ducimus aliquid sunt assumenda eum possimus, voluptatum, velit ullam magni accusantium. Cum minima eum quod suscipit hic assumenda quidem repellat asperiores ad perspiciatis corrupti molestiae illo, doloremque natus sit, consequatur debitis unde iusto culpa nisi! Consequatur?</p>
+            <h1 class="section__title">About Me</h1>
+            <div class="about__content-wrapper">
+                {% comment %} <div class="section__quote">
+                    <h1 class="section__quote--text">Apologize when you're wrong. Stop looking for quotes that support your stupidity.</h1>
+                    <h4 class="section__quote--credit">Youtube Comments Section</h4>
+                </div> {% endcomment %}
+                <picture class="about__image--wrapper">
+                    <img src="{% static 'images/doge.png' %}" alt="placeholder image" class="about__image">
+                </picture>
+                <div class="about__text-wrapper">
+                    <h1 class="section__subtitle">Introduction</h1>
+                    <p class="section__text">A passionate developer and a computer enthusiast. Since my childhood I have always had a keen interest in computing more specifically, in web and networking. The Internet has always fascinated me and now I have decided to persue this professionally woking as a developer.</p>
+                </div>
+            </div>
+            
         </section>
         <section class="section projects" id="projects">
             <h1 class="section__title">Projects</h1>
