@@ -107,7 +107,8 @@
                         </div>
                     </div>
                 </div>
-                <form class="contact__form-wrapper">
+                <form class="contact__form-wrapper" method="post" action="{% url 'submit' %}">
+                    {% csrf_token %}
                     <div class="contact__form--field-wrapper">
                         <div class="contact__form--field contact__form--field-name">
                             <label for="name">Name</label>
@@ -115,7 +116,7 @@
                         </div>
                         <div class="contact__form--field contact__form--field-email">
                             <label for="email">Email</label>
-                            <input type="email" name="email" id="email" class="contact__form-input">
+                            <input type="email" name="email" id="email" class="contact__form-input" required>
                         </div>
                     </div>
                     <div class="contact__form--field">
@@ -124,7 +125,7 @@
                     </div>
                     <div class="contact__form--field">
                         <label for="mesage">Message</label>
-                        <textarea name="message" id="message" cols="30" rows="10" class="contact__form-input"></textarea>
+                        <textarea name="message" id="message" cols="30" rows="10" class="contact__form-input" required></textarea>
                     </div>                    
                     <button class="btn">Submit</button>
                 </from>
