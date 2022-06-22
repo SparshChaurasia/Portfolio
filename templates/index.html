@@ -77,11 +77,59 @@
         <section class="section contact" id="contact">
             <h1 class="section__title">Contact</h1>
             <h1 class="section__subtitle">this is subtitle</h1>
-            <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aperiam veniam, error cum dolorum ducimus aliquid sunt assumenda eum possimus, voluptatum, velit ullam magni accusantium. Cum minima eum quod suscipit hic assumenda quidem repellat asperiores ad perspiciatis corrupti molestiae illo, doloremque natus sit, consequatur debitis unde iusto culpa nisi! Consequatur?</p>
+            <div class="contact__content-wrapper">
+                <div class="contact__link-wrapper">
+                    <div class="contact__link">
+                        <div>
+                            <i class="fa-solid fa-2x fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3 class="contact__link--title">Email</h3>
+                            <h3 class="contact__link--text">sparshchaurasia0021@gmail.com</h3>
+                        </div>
+                    </div>
+                    <div class="contact__link">
+                        <div>
+                            <i class="fa-solid fa-2x fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3 class="contact__link--title">Phone</h3>
+                            <h3 class="contact__link--text">Nahi batauga</h3>
+                        </div>
+                    </div>
+                    <div class="contact__link">
+                        <div>
+                            <i class="fa-solid fa-2x fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h3 class="contact__link--title">Address</h3>
+                            <h3 class="contact__link--text">Nahi batauga</h3>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact__form-wrapper">
+                    <div class="contact__form--field-wrapper">
+                        <div class="contact__form--field contact__form--field-name">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" class="contact__form-input">
+                        </div>
+                        <div class="contact__form--field contact__form--field-email">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" class="contact__form-input">
+                        </div>
+                    </div>
+                    <div class="contact__form--field">
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject" class="contact__form-input">
+                    </div>
+                    <div class="contact__form--field">
+                        <label for="mesage">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" class="contact__form-input"></textarea>
+                    </div>                    
+                    <button class="btn">Submit</button>
+                </from>
+            </div>
         </section>
     </main>
-    {% comment %} <footer class="footer">
-        <p>uuw</p>
-    </footer> {% endcomment %}
 </body>
 </html>
