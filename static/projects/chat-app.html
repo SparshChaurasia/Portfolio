@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+</head>
+
+<body>
+    <h1>Command Line Chat App</h1>
+    <p>A command line interface chat app built with pyhton - socket and multithreading</p>
+    <h2>Running</h2>
+    <h4>Make sure to get python 3.9 or higher</h4>
+    <p>This runtime is required to run the bot</p>
+    <h4>Setup a virtual environment</h4>
+    <ol>
+        <li>
+            <p>Install the virtual environment maker tool</p>
+            <pre>
+                <code class="language-bash">pip install virtualenv</code>
+            </pre>
+        </li>
+        <li>
+            <p>Create a virtual environment (you could name the environment anything)</p>
+            <pre>
+                <code class="language-bash">virtualenv venv</code>
+            </pre>
+        </li>
+        <li>
+            <p>Activate virtual environment
+                (for linux and mac)</p>
+            <pre>
+                <code class="language-bash">source ./venv/Scripts/activate</code>
+            </pre>
+            <p>(for windows)</p>
+            <pre>
+                <code class="language-powershell">./venv/Scripts/activate</code>
+            </pre>
+        </li>
+    </ol>
+    <h4>Install required packages</h4>
+    <pre>
+        <code class="language-bash">pip install -r requirements.txt</code>
+    </pre>
+    <h4>Setup a server</h4>
+    <p>Clone the repository and run the server.py file on localhost or your public ip</p>
+    <h4>Join the chat!</h4>
+    <p>Anyone could join the chat using the client.py file given, the ip and the port number</p>
+    <h2>Screenshots</h2>
+    <p>
+        <img src="/images/chat-preview.png" alt="chat-preview">
+        <img src="/images/terminal-server-preview.JPG" alt="terminal-server-preview">
+    </p>
+    <h2>Documentation</h2>
+    <ul>
+        <li><a href="https://docs.python.org/3/library/socket.html">socket documentation — Low-level networking
+                interface</a></li>
+        <li><a href="https://docs.python.org/3/library/threading.html/">threading documentation — Thread-based
+                parallelism</a></li>
+        <li><a href="https://rich.readthedocs.io/en/stable/introduction.html">rich documentation</a></li>
+    </ul>
+    <h2>Acknowledgements</h2>
+    <ul>
+        <li><a href="https://www.neuralnine.com/tcp-chat-in-python/">Simple chat app python</a></li>
+    </ul>
+</body>
+
+</html>

@@ -72,8 +72,46 @@
         </section>
         <section class="section projects" id="projects">
             <h1 class="section__title">Projects</h1>
-            <h1 class="section__subtitle">this is subtitle</h1>
-            <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aperiam veniam, error cum dolorum ducimus aliquid sunt assumenda eum possimus, voluptatum, velit ullam magni accusantium. Cum minima eum quod suscipit hic assumenda quidem repellat asperiores ad perspiciatis corrupti molestiae illo, doloremque natus sit, consequatur debitis unde iusto culpa nisi! Consequatur?</p>
+            <h3 class="section__subtitle">These are some of my projects that I think are worth mentioning...</h3>
+            <div class="projects__cards-container">
+                <div class="projects__card">
+                    <picture>
+                        <img src="{% static 'images/demo.png' %}" alt="image" class="projects__card--image">
+                    </picture>
+                    <div class="projects__card-text-wrapper">
+                        <h3 class="projects__card--title">Discord Bot</h3>
+                        <p class="projects__card--text">A general purpose discord bot built with discord.py api wrapper in python</p>
+                    </div>
+                    <div class="projects__card--info">
+                        <a href="{% static 'projects/discord-bot.html' %}">View project</a>
+                    </div>
+                </div>
+                <div class="projects__card">
+                    <picture>
+                        <img src="{% static 'images/demo.png' %}" alt="image" class="projects__card--image">
+                    </picture>
+                    <div class="projects__card-text-wrapper">
+                        <h3 class="projects__card--title">Chat App</h3>
+                        <p class="projects__card--text">A command line interface chat app built with pyhton - socket and multithreading</p>
+                    </div>
+                    <div class="projects__card--info">
+                        <a href="{% static 'projects/chat-app.html' %}">View project</a>
+                    </div>
+                </div>
+                <div class="projects__card">
+                    <picture>
+                        <img src="{% static 'images/demo.png' %}" alt="image" class="projects__card--image">
+                    </picture>
+                    <div class="projects__card-text-wrapper">
+                        <h3 class="projects__card--title">Calculator App</h3>
+                        <p class="projects__card--text">Simple GUI calculator made with Pyhton tkinter module</p>
+                    </div>
+                    <div class="projects__card--info">
+                        <a href="{% static 'projects/gui-calculator.html' %}">View project</a>
+                    </div>
+                </div>
+                
+            </div>
         </section>
         <section class="section contact" id="contact">
             <h1 class="section__title">Contact</h1>

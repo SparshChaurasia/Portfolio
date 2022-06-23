@@ -356,6 +356,51 @@ img {
     background-color: antiquewhite;
 }
 
+.projects__cards-container {
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-gap: 2rem;
+}
+
+.projects__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 20rem;
+    border: 2px solid black;
+    background: #fafafa;
+}
+
+.projects__card--image {
+    width: 100%;
+    display: block;
+}
+
+.projects__card-text-wrapper {
+    padding: 0 2rem;
+}
+
+.projects__card--title {
+    font-size: 2em;
+    line-height: 1;
+    padding-top: 1.75rem;
+}
+
+.projects__card--text {
+    line-height: 1.5;
+    font-size: var(--normal-font-size);
+    padding-top: 1rem;
+}
+
+.projects__card--info {
+    margin-top: 1.5rem;
+    padding: 0.25rem 0.75rem;
+    background: #eeeeee;
+    font-size: 0.8em;
+    border-bottom: 2px solid #cccccc;
+}
+
 /*=============== Contact Section ===============*/
 .contact {
     background-color: yellowgreen;
