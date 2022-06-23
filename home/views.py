@@ -1,6 +1,9 @@
-from django.shortcuts import render, HttpResponse, redirect
-from .models import Contact
 from datetime import datetime
+
+from django.contrib import messages
+from django.shortcuts import HttpResponse, redirect, render
+
+from .models import Contact
 
 
 def index(request):
@@ -18,6 +21,7 @@ def submit(request):
     print(name, email, subject, message)
 
     if not email and message:
+        messages.error(request, "Missing required fields")
         return redirect("/#contact")
 
     form = Contact(
@@ -28,6 +32,6 @@ def submit(request):
         Date=datetime.now(),
     )
     form.save()
-
+    messages.success(request, "Your form was successfully submitted")
     return redirect("/#contact")
     

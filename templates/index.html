@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyPortfolio</title>
     {% load static %}
+    <script src="{% static 'js/script.js' %}"></script>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -77,6 +78,27 @@
         <section class="section contact" id="contact">
             <h1 class="section__title">Contact</h1>
             <h1 class="section__subtitle">this is subtitle</h1>
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="popup__container">
+
+                        {% if message.tags == "success" %}
+                            <i class="fa-solid fa-3x fa-check popup__image"></i>
+                            <h2 class="popup__heading">Thank You!</h2>
+                        {% elif message.tags == "error" %}
+                            <i class="fa-solid fa-3x fa-exclamation popup__image popup__image--error"></i>
+                            <h2 class="popup__heading">Error!</h2>
+                        {% else %}
+                            <i class="fa-solid fa-3x fa-exclamation popup__image popup__image--error"></i>
+                            <h2 class="popup__heading">Message</h2>
+                        {% endif %}
+
+                        <p class="popup__text"> {{ message }} </p>
+                        <button class="btn btn-flex" onclick="removePopup()">Ok</button>
+                    </div>
+                {% endfor %}
+            </ul>
+            {% endif %}
             <div class="contact__content-wrapper">
                 <div class="contact__link-wrapper">
                     <div class="contact__link">
