@@ -1,106 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discord Bot | Projects | Sparsh Chaurasia</title>
+    <title>Discord Bot</title>
 </head>
+
 <body>
     <h1 class="project__discord-bot--title">Discord Bot</h1>
+    <br>
+    <p>A general purpose discord bot built with discord.py api wrapper in python.</p>
+    <br>
+    <h2>Features</h2>
+    <ul>
+        <li>Moderation commands</li>
+        <li>Miscellaneous commands</li>
+        <li>Music support (coming soon)</li>
+    </ul>
+    <br>
+    <h2>Running</h2>
+    <h4>Grab the code from here</h4>
+    <p><a href="https://github.com/SparshChaurasia/DiscordBot/" target="_blank">click here</a></p>
+    <br>
+    <h4>Create a bot user on the discord developer portal</h4>
+    <p>Follow the steps given in the link below and create a bot user
+        <a href="https://discordpy.readthedocs.io/en/stable/discord.html" target="_blank">click here</a>
+    </p>
+    <br>
+    <h4>Make sure to get python 3.9 or higher</h4>
+    <p>This runtime is required to run the bot</p>
+    <br>
+    <h4>Set up environment variables for the project</h4>
+    <p>To run this project, you will need to add the following environment variables to your .env file
         <br>
-        <p>A general purpose discord bot built with discord.py api wrapper in python.</p>
+        <code>TOKEN</code>
         <br>
-        <h2>Features</h2>
-        <ul>
-            <li>Moderation commands</li>
-            <li>Miscellaneous commands</li>
-            <li>Music support (coming soon)</li>
-        </ul>
-        <br>
-        <h2>Running</h2>
-        <h4>Grab the code from here</h4>
-        <p><a href="https://github.com/SparshChaurasia/DiscordBot/" target="_blank">click here</a></p>
-        <br>
-        <h4>Create a bot user on the discord developer portal</h4>
-        <p>Follow the steps given in the link below and create a bot user
-            <a href="https://discordpy.readthedocs.io/en/stable/discord.html" target="_blank">click here</a>
-        </p>
-        <br>
-        <h4>Make sure to get python 3.9 or higher</h4>
-        <p>This runtime is required to run the bot</p>
-        <br>
-        <h4>Set up environment variables for the project</h4>
-        <p>To run this project, you will need to add the following environment variables to your .env file
+        This is the token authorized by discord to your bot account
+    </p>
+    <br>
+    <h4>Setup a virtual environment</h4>
+    <ol>
+        <li>
+            <p>Install the virtual environment maker tool</p>
+            <code class="language-bash">pip install virtualenv</code>
+            <br><br>
+        </li>
+        <li>
+            <p>Create a virtual environment (you could name the environment anything)</p>
+            <code class="language-bash">virtualenv venv</code>
+            <br><br>
+        </li>
+        <li>
+            <p>Activate virtual environment (for linux and mac)</p>
+            <code class="language-bash">source ./venv/Scripts/activate</code>
+            <br><br>
+            <p>(for windows)</p>
+            <code class="language-powershell">cd ./venv/Scripts/</code>
             <br>
-            <code>TOKEN</code>
-            <br>
-            This is the token authorized by discord to your bot account
-        </p>
-        <br>
-        <h4>Setup a virtual environment</h4>
-        <ol>
-            <li>
-                <p>Install the virtual environment maker tool</p>
-                <code class="language-bash">pip install virtualenv</code>
-                <br><br>
-            </li>
-            <li>
-                <p>Create a virtual environment (you could name the environment anything)</p>
-                <code class="language-bash">virtualenv venv</code>
-                <br><br>
-            </li>
-            <li>
-                <p>Activate virtual environment (for linux and mac)</p>
-                <code class="language-bash">source ./venv/Scripts/activate</code>
-                <br><br>
-                <p>(for windows)</p>
-                <code class="language-powershell">cd ./venv/Scripts/</code>
-                <br>
-                <code class="language-powershell">./activate.sh</code>
-                <br><br>
-            </li>
-        </ol>
-        <br>
-        <h4>Install required packages</h4>
-        <code class="language-bash">pip install -r requirements.txt</code>
-        <br><br>
-        <h4>Run the instance of the bot</h4>
-        <code class="language-bash">python main.py</code>
-        <br><br>
-        <blockquote>
-            <p>Your bot would be up and ready but remember that the bot is hosted temporarily on your local machine
-                and would be down once you exit the code or close the terminal</p>
-        </blockquote>
-        <br>
-        <h2>Documentation</h2>
-        <ul>
-            <li><a href="https://discord.com/developers/docs/intro" target="_blank">discord developer portal official
-                    documentation</a></li>
-            <li><a href="https://discordpy.readthedocs.io/en/stable/" target="_blank">discordpy official documentation</a></li>
-        </ul>
-        <br>
-        <h2>Preview</h2>
-        <p>
-            {% load static %}
-            <img src="{% static 'images/screenshots/Capture-bot3.PNG' %}" alt="image not found">
-            <img src="{% static 'images/screenshots/Capture-bot.PNG' %}" alt="image not found">
-            <img src="{% static 'images/screenshots/Capture-bot2.PNG' %}" alt="image not found">
-            <img src="{% static 'images/screenshots/Capture-bot4.PNG' %}" alt="image not found">
-        </p>
-        <br>
-        <h2>Acknowledgements</h2>
-        <ul>
-            <li>
-                <a href="https://opensourcelibs.com/libs/discord-py" target="_blank">Awesome open-source discord bots made with
-                    discordpy</a>
-            </li>
-            <li>
-                <a
-                    href="https://medium.com/analytics-vidhya/how-to-host-a-discord-py-bot-on-heroku-and-github-d54a4d62a99e" target="_blank">Host
-                    a discord bot 24/7 for free</a>
-            </li>
-        </ul>
+            <code class="language-powershell">./activate.sh</code>
+            <br><br>
+        </li>
+    </ol>
+    <br>
+    <h4>Install required packages</h4>
+    <code class="language-bash">pip install -r requirements.txt</code>
+    <br><br>
+    <h4>Run the instance of the bot</h4>
+    <code class="language-bash">python main.py</code>
+    <br><br>
+    <blockquote>
+        <p>Your bot would be up and ready but remember that the bot is hosted temporarily on your local machine
+            and would be down once you exit the code or close the terminal</p>
+    </blockquote>
+    <br>
+    <h2>Documentation</h2>
+    <ul>
+        <li><a href="https://discord.com/developers/docs/intro" target="_blank">discord developer portal official
+                documentation</a></li>
+        <li><a href="https://discordpy.readthedocs.io/en/stable/" target="_blank">discordpy official documentation</a>
+        </li>
+    </ul>
+    <br>
+    <h2>Preview</h2>
+    <p>
+        <img src="../images/screenshots/discord-bot-invite-preview.JPG" alt="image not found">
+        <img src="../images/screenshots/discord-bot-mention-preview.JPG" alt="image not found">
+        <img src="../images/screenshots/discord-bot-moderation1-preview.JPG" alt="image not found">
+        <img src="../images/screenshots/discord-bot-moderation2-preview.JPG" alt="image not found">
+    </p>
+    <br>
+    <h2>Acknowledgements</h2>
+    <ul>
+        <li>
+            <a href="https://opensourcelibs.com/libs/discord-py" target="_blank">Awesome open-source discord bots made
+                with
+                discordpy</a>
+        </li>
+        <li>
+            <a href="https://medium.com/analytics-vidhya/how-to-host-a-discord-py-bot-on-heroku-and-github-d54a4d62a99e"
+                target="_blank">Host
+                a discord bot 24/7 for free</a>
+        </li>
+    </ul>
     </div>
 </body>
+
 </html>
