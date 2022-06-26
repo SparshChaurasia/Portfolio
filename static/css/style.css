@@ -12,6 +12,7 @@
 
     --first-color: #5680E9;
     --title-color: #8860D0;
+    --title-color-secondary: #3b292969;
     --text-color: #C1C8E4;
     --body-color: #5AB9EA;
     --body-color-light: #84CEEB;
@@ -22,6 +23,7 @@
     /*========== Font size ==========*/
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
     --big-font-size: 3rem;
+    --heading-font-size: 1.75rem;
     --normal-font-size: 1rem;
     --small-font-size: 0.5rem;
 
@@ -44,6 +46,7 @@
 @media screen and (min-width: 968px) {
     :root {
         --big-font-size: 3.5rem;
+        --heading-font-size: 2rem;
         --normal-font-size: 1.25rem;
         --small-font-size: 1rem;
     }
@@ -64,13 +67,21 @@ body {
     color: var(--text-color);
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2 {
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
     font-size: var(--big-font-size);
+}
+
+h3, h4 {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    font-size: var(--heading-font-size);
+}
+
+p {
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
 }
 
 ul {
@@ -126,10 +137,9 @@ img {
     text-align: center;
 }
 
-.section__text {
+/* .section__text {
     font-size: var(--normal-font-size);
-    color: var(--text-color);
-}
+} */
 
 .popup__container {
     border: 2px solid black;
@@ -162,7 +172,6 @@ img {
 }
 
 .popup__text {
-    font-size: var(--normal-font-size);
     margin: 0.75rem 0;
 }
 
@@ -351,6 +360,36 @@ img {
     height: 15rem;
 }
 
+/*=============== Skills Section ===============*/
+.skills__content-wrapper {
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-gap: 2rem;
+}
+
+.skills__panel {
+    max-width: 20rem;
+    padding: 1rem;
+    border: 3px solid black;
+}
+
+.skills__name-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills__name {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+.skills__name-progress {
+    color: var(--title-color-secondary);
+    font-weight: var(--font-semi-bold);
+}
+
+
 /*=============== Projects Section ===============*/
 .projects {
     background-color: antiquewhite;
@@ -389,7 +428,6 @@ img {
 
 .projects__card--text {
     line-height: 1.5;
-    font-size: var(--normal-font-size);
     padding-top: 1rem;
 }
 
