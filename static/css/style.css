@@ -363,9 +363,10 @@ img {
 /*=============== Skills Section ===============*/
 .skills__content-wrapper {
     margin: 3rem auto;
+    /* max-width: calc(100vh - var(--page-indent)); */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-    grid-gap: 2rem;
+    row-gap: 2rem;
 }
 
 .skills__panel {
