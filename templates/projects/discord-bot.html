@@ -84,12 +84,13 @@
     </ul>
     <br>
     <h2>Preview</h2>
-    <p>
-        <img src="../images/screenshots/discord-bot-invite-preview.JPG" alt="image not found">
-        <img src="../images/screenshots/discord-bot-mention-preview.JPG" alt="image not found">
-        <img src="../images/screenshots/discord-bot-moderation1-preview.JPG" alt="image not found">
-        <img src="../images/screenshots/discord-bot-moderation2-preview.JPG" alt="image not found">
-    </p>
+    <picture>
+        {% load static %}
+        <img src="{% static '/images/screenshots/discord-bot-invite-preview.JPG' %}" alt="image not found">
+        <img src="{% static '/images/screenshots/discord-bot-mention-preview.JPG' %}" alt="image not found">
+        <img src="{% static '/images/screenshots/discord-bot-moderation1-preview.JPG' %}" alt="image not found">
+        <img src="{% static '/images/screenshots/discord-bot-moderation2-preview.JPG' %}" alt="image not found">
+    </picture>
     <br>
     <h2>Acknowledgements</h2>
     <ul>
@@ -99,9 +100,7 @@
                 discordpy</a>
         </li>
         <li>
-            <a href="https://medium.com/analytics-vidhya/how-to-host-a-discord-py-bot-on-heroku-and-github-d54a4d62a99e"
-                target="_blank">Host
-                a discord bot 24/7 for free</a>
+            <a href="https://medium.com/analytics-vidhya/how-to-host-a-discord-py-bot-on-heroku-and-github-d54a4d62a99e" target="_blank">Host a discord bot 24/7 for free</a>
         </li>
     </ul>
     </div>

@@ -49,16 +49,15 @@
     <h4>Join the chat!</h4>
     <p>Anyone could join the chat using the client.py file given, the ip and the port number</p>
     <h2>Screenshots</h2>
-    <p>
-        <img src="../images/screenshots/chat-preview.PNG" alt="chat-preview">
-        <img src="../images/screenshots/chat-server-preview.JPG" alt="chat-server-preview">
-    </p>
+    <picture>
+        {% load static %}
+        <img src="{% static '/images/screenshots/chat-preview.PNG' %}" alt="chat-preview">
+        <img src="{% static '/images/screenshots/chat-server-preview.JPG' %}" alt="chat-server-preview">
+    </picture>
     <h2>Documentation</h2>
     <ul>
-        <li><a href="https://docs.python.org/3/library/socket.html">socket documentation — Low-level networking
-                interface</a></li>
-        <li><a href="https://docs.python.org/3/library/threading.html/">threading documentation — Thread-based
-                parallelism</a></li>
+        <li><a href="https://docs.python.org/3/library/socket.html">socket documentation — Low-level networking interface</a></li>
+        <li><a href="https://docs.python.org/3/library/threading.html/">threading documentation — Thread-based parallelism</a></li>
         <li><a href="https://rich.readthedocs.io/en/stable/introduction.html">rich documentation</a></li>
     </ul>
     <h2>Acknowledgements</h2>

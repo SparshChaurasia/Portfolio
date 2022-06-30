@@ -1,3 +1,5 @@
+import os
+from pathlib import Path
 from datetime import datetime
 
 from django.contrib import messages
@@ -34,4 +36,14 @@ def submit(request):
     form.save()
     messages.success(request, "Your form was successfully submitted")
     return redirect("/#contact")
+    
+
+def project(request, project):
+    templates = os.listdir(Path(__file__).parent.parent / "./templates/projects/")
+
+    if not any(project in template for template in templates):
+        messages.error(request, "Invalid project name!")
+        return redirect("/")
+    
+    return render(request, f"./projects/{project}.html")
     
