@@ -67,13 +67,15 @@ body {
     color: var(--text-color);
 }
 
-h1, h2 {
+h1,
+h2 {
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
     font-size: var(--big-font-size);
 }
 
-h3, h4 {
+h3,
+h4 {
     color: var(--title-color);
     font-weight: var(--font-medium);
     font-size: var(--heading-font-size);
@@ -174,6 +176,10 @@ img {
 .popup__text {
     margin: 0.75rem 0;
 }
+
+/* .logo-svg {
+    
+} */
 
 /* .section__quote {
     font-family: 'Gelasio', serif;
@@ -285,8 +291,9 @@ img {
     font-weight: var(--font-medium);
 }
 
-.logo {
+.logo-svg {
     height: 5rem;
+    width: 5rem;
 }
 
 

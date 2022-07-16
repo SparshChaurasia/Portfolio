@@ -41,7 +41,7 @@ def submit(request):
 def project(request, project):
     templates = os.listdir(Path(__file__).parent.parent / "./templates/projects/")
 
-    if not any(project in template for template in templates):
+    if not any(project == template.split(".")[0] for template in templates):
         messages.error(request, "Invalid project name!")
         return redirect("/")
     
