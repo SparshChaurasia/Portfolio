@@ -11,6 +11,7 @@ from .models import Contact
 def index(request):
     return render(request, "index.html")
 
+
 def submit(request):
     if request.method != "POST":
         return HttpResponse("Invalid request method")
@@ -20,9 +21,7 @@ def submit(request):
     subject = request.POST.get("subject")
     message = request.POST.get("message")
 
-    print(name, email, subject, message)
-
-    if not email and message:
+    if not all((email, message)):
         messages.error(request, "Missing required fields")
         return redirect("/#contact")
 
@@ -36,7 +35,7 @@ def submit(request):
     form.save()
     messages.success(request, "Your form was successfully submitted")
     return redirect("/#contact")
-    
+
 
 def project(request, project):
     templates = os.listdir(Path(__file__).parent.parent / "./templates/projects/")
@@ -44,6 +43,5 @@ def project(request, project):
     if not any(project == template.split(".")[0] for template in templates):
         messages.error(request, "Invalid project name!")
         return redirect("/")
-    
+
     return render(request, f"./projects/{project}.html")
-    
