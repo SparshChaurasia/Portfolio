@@ -6,7 +6,9 @@ from django.contrib import messages
 from django.shortcuts import HttpResponse, redirect, render
 
 from .models import Contact
-from Portfolio.settings import BASE_DIR
+
+
+ROOT = Path(__file__).resolve().parent.parent  # Absolute path to the project root folder
 
 
 def index(request):
@@ -39,7 +41,7 @@ def submit(request):
 
 
 def project(request, project):
-    templates = os.listdir(BASE_DIR / "templates/projects")
+    templates = os.listdir(ROOT / "templates/projects")
 
     if not any(project == template.split(".")[0] for template in templates):
         messages.error(request, "Invalid project name!")
